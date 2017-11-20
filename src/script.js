@@ -60,7 +60,7 @@
   }
 })();
 */
-
+/*
 (function() {
   function Question(question, answers, answer) {
     this.question = question;
@@ -143,4 +143,30 @@
     }
   }
   nextQuestion();
+})();
+
+*/
+
+var pracIIFE = (function() {
+  let add = function(b) {
+    return 12 + b;
+  };
+
+  return {
+    publicAdd: function(b) {
+      console.log(add(b));
+    }
+  };
+})();
+
+let pracLET = (function() {
+  let add = function(b) {
+    return 24 + b;
+  };
+
+  return {
+    hello: function(b) {
+      console.log(add(b));
+    }
+  };
 })();
